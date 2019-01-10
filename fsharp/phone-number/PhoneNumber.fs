@@ -1,3 +1,5 @@
 ﻿module PhoneNumber
 
-let clean input = failwith "You need to implement this function."
+let clean input = 
+    match input with
+    | i when Seq.length <| i <> 11  -> "Can't be!"
